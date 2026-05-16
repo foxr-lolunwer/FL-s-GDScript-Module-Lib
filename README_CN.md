@@ -16,8 +16,8 @@
 
 内嵌到您的GD项目中
 建议配置为全局单例：
-| 模块 | 单例文件 |
-|------|------|
-| **Logger** | `FLogger.gd` |
-| **JSON5Parser** | `Json5Parser.gd` |
-| **LangParser** | `FLang.gd` |
+| 模块 | 单例文件 | 依赖模块 |
+|------|------|------|
+| **Logger** | `FLogger.gd` | 无 |
+| **JSON5Parser** | `Json5Parser.gd` | Logger |
+| **LangParser** | `FLang.gd` | Logger JSON5Parser |
